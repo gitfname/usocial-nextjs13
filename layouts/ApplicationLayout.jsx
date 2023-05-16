@@ -8,6 +8,8 @@
 
 import NavBar from "@/components/NavBar"
 import ProfileCard from "@/components/ProfileCard"
+import SideNavBar from "@/components/SideNavBar"
+import Button from "@/components/Button"
 
         
 function ApplicationLayout({children}) {
@@ -16,16 +18,16 @@ function ApplicationLayout({children}) {
         <NavBar />
         <div className="grid grid-cols-[250px_1fr] w-[90%] mx-auto">
           
-          <div className="border border-red-500 space-y-10 overflow-y-auto py-10 pr-1.5">
+          <div className="space-y-5 overflow-y-auto py-10 pr-1.5">
 
             <ProfileCard />
+            
+            <SideNavBar />
 
-            <div className="w-11/12 h-32 mx-auto border border-red-400 rounded-lg"></div>
-            <div className="w-11/12 h-32 mx-auto border border-red-400 rounded-lg"></div>
-            <div className="w-11/12 h-32 mx-auto border border-red-400 rounded-lg"></div>
-            <div className="w-11/12 h-32 mx-auto border border-red-400 rounded-lg"></div>
-            <div className="w-11/12 h-32 mx-auto border border-red-400 rounded-lg"></div>
-            <div className="w-11/12 h-32 mx-auto border border-red-400 rounded-lg"></div>
+            <Button
+              className="w-full py-2"
+               text="Create Post"
+            />
           </div>
 
           <div className="overflow-y-auto px-10 py-10">

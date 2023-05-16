@@ -1,5 +1,6 @@
 import ApplicationLayout from '@/layouts/ApplicationLayout'
 import './globals.css'
+import "./styles.css"
 
 export const metadata = {
   title: 'U-Social',
@@ -9,6 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://kit.fontawesome.com/20fd113779.js" crossOrigin="anonymous"></script>
+      </head>
       <body>
         <ApplicationLayout>
           {children}
