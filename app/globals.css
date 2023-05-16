@@ -27,7 +27,8 @@
 }
 
 html {
-    font-size: var(--html-font-size);
+    /* font-size: var(--html-font-size); */
+    @apply text-[14px] xl:text-[16px] 2xl:text-[18px];
     font-weight: 500;
 }
 

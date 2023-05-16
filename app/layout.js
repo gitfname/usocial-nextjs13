@@ -1,4 +1,3 @@
-import NavBar from '@/components/NavBar'
 import ApplicationLayout from '@/layouts/ApplicationLayout'
 import './globals.css'
 
@@ -12,7 +11,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <ApplicationLayout>
-          <NavBar />
           {children}
         </ApplicationLayout>
       </body>

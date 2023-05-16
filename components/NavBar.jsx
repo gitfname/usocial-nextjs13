@@ -6,9 +6,9 @@ import Button from "./Button"
 
 function NavBar() {
   return (
-    <nav className="bg-white py-2 shadow-sm shadow-black/10">
+    <nav className="bg-white py-2 flex items-center shadow-sm shadow-black/10">
         {/* container */}
-        <div className="flex items-center justify-between w-[80%] mx-auto">
+        <div className="flex items-center justify-between w-[90%] mx-auto">
             {/* logo */}
             <Link
                 href="/"
