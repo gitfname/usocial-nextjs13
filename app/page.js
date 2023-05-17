@@ -1,3 +1,4 @@
+import CreatePost_1 from "@/components/CreatePost_1";
 import StoriesCard from "@/components/StoriesCard";
 
 export default function Home() {
@@ -79,6 +80,12 @@ export default function Home() {
           />
 
         </div>
+      </div>
+
+      <div className="mt-6 w-full">
+        <CreatePost_1
+          username="Diana"
+        />
       </div>
       
     </div>
