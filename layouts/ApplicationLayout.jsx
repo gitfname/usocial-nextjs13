@@ -30,7 +30,7 @@ function ApplicationLayout({children}) {
             />
           </div>
 
-          <div className="overflow-y-auto px-5 md:px-10 py-10" id="main-section">
+          <div className="overflow-y-auto px-3.5 md:px-10 py-10" id="main-section">
             {children}
           </div>
         </div>

@@ -42,6 +42,37 @@
     /* End ---- ProfileCard ---- End */
 
 
+
+    /* ---- NotificationCard_1 ---- */
+
+    --notificationcard1--padding: 12px;
+    --notificationcard1--border-radius: 0px;
+    --notificationcard1--bg: transparent;
+    --notificationcard1--hover-bg: transparent;
+    --notificationcard1--border-b-color: rgba(0, 0, 0, 0.06);
+    --notificationcard1--padding-y: 14px;
+
+    --notificationcard1_placeholder--bg: var(--color-gray);
+
+    --notificationcard1__img--width: 2.4rem;
+    --notificationcard1__img--height: 2.4rem;
+    --notificationcard1__img--border-radius: 0.8rem;
+    --notificationcard1__img--shadow-color: rgba(0, 0, 0, 0.3);
+
+    --notificationcard1--font-size: 0.9rem;
+    --notificationcard1--color: var(--color-semidark);
+    --notificationcard1--font-weight: 500;
+
+    --notificationcard1__username--font-size: 0.9rem;
+    --notificationcard1__username--color: var(--color-dark);
+    --notificationcard1__username--font-weight: 500;
+
+    --notificationcard1__date--font-size: 0.75rem;
+    --notificationcard1__date--color: rgba(0, 0, 0, 0.6);
+    --notificationcard1__date--font-weight: 600;
+
+    /* End ---- NotificationCard_1 ---- End */
+
     --border-radius: 2rem;
     --card-border-radius: 1rem;
     --btn-padding: 0.4rem 1.5rem;

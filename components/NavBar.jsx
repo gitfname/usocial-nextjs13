@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <nav className="bg-[--color-white] py-2 flex items-center shadow-sm shadow-black/10">
         {/* container */}
-        <div className="flex items-center justify-between w-[90%] mx-auto">
+        <div className="flex items-center justify-between w-[90%] mx-auto relative">
 
             <div className="lg:hidden">
                 <MobileMenu />
@@ -18,7 +18,8 @@ function NavBar() {
             {/* logo */}
             <Link
                 href="/"
-                className="text-2xl font-semibold text-gray-800"
+                className="text-2xl font-semibold text-gray-800
+                max-lg:absolute top-1/2 left-1/2 max-lg:-translate-y-1/2 max-lg:-translate-x-1/2"
             >
                 USocial
             </Link>
@@ -42,6 +43,7 @@ function NavBar() {
                 {/* create post button */}
                 <Button
                     text="create"
+                    className="max-md:hidden"
                 />
 
                 {/* profile picture */}

@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation"
 import dynamic from "next/dynamic"
 import Link from "next/link"
+import SideNavBarItem from "./SideNavItem"
 
 const BiHomeAlt2 = dynamic(() => import("react-icons/bi").then(module => module.BiHomeAlt2), {ssr:false})
 const MdOutlineExplore = dynamic(() => import("react-icons/md").then(module => module.MdOutlineExplore), {ssr:false})
@@ -12,33 +13,6 @@ const BiMessageSquareDetail = dynamic(() => import("react-icons/bi").then(module
 const BsBookmark = dynamic(() => import("react-icons/bs").then(module => module.BsBookmark), {ssr:false})
 const BsGear = dynamic(() => import("react-icons/bs").then(module => module.BsGear), {ssr:false})
 const IoAnalytics = dynamic(() => import("react-icons/io5").then(module => module.IoAnalytics), {ssr:false})
-
-
-
-function SideNavBarItem({text, href, icon, pathname=""}) {
-    return (
-        <Link
-            href={href}
-            className={`cursor-pointer transition-colors duration-200 flex items-center hover:bg-[--color-light] p-3 py-4
-            relative group ${pathname===href&&"active-sidebar-navlink"}`}
-        >
-            <div className="absolute opacity-0 group-hover:opacity-100 top-0 left-0 w-1 h-full group-[.active-sidebar-navlink]:opacity-100 bg-[--color-primary]"></div>
-            <div
-                className="w-11 grid place-items-center fill-[--color-gray]
-                group-hover:fill-[--color-primary]
-                group-[.active-sidebar-navlink]:fill-[--color-primary]"
-            >
-                {icon}
-            </div>
-            <p
-                className="text-sm font-medium text-[--color-black] group-[.active-sidebar-navlink]:text-[--color-primary]
-                group-hover:text-[--color-primary]"
-            >
-                {text}
-            </p>
-        </Link>
-    )
-}
 
 function SideNavBar() {
     const pathname = usePathname()
