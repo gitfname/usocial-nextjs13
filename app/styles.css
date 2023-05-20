@@ -3,14 +3,44 @@
 
 :root {
     --color-white: hsl(252, 30%, 100%);
-    --color-light: hsl(252, 30%, 95%);
+    --color-light: hsl(249, 23%, 94%);
+    --color-lighter: hsl(252, 30%, 95%);
     --color-gray: hsl(252, 15%, 65%);
     --color-primary: hsl(252, 75%, 60%);
     --color-secondary: hsl(252, 100%, 90%);
     --color-sucsess: hsl(120, 95%, 65%);
     --color-danger: hsl(0, 95%, 65%);
+    --color-semidark: hsla(254, 17%, 25%, 0.831);
     --color-dark: hsl(252, 30%, 17%);
     --color-black: hsl(252, 30%, 10%);
+
+    /* NavBar text input */
+    --topnavbar__text-input--bg: hsl(249, 23%, 94%);
+    --topnavbar__text-input--color: hsl(252, 30%, 17%);
+    --topnavbar__text-input__placeholder--text-color: hsl(252, 30%, 17%);
+    --topnavbar__text-input__border-radius: 50px;
+
+    /* ---- ProfileCard ---- */
+
+    --profilecard--bg: var(--color-white);
+    --profilecard--border-radius: 12px;
+
+    --profilecard__img--width: 33px;
+    --profilecard__img--height: 33px;
+    --profilecard__img--border-radius: 50%;
+
+    --profilecard__username--font-size: 13px;
+    --profilecard__username--font-weight: 500;
+    --profilecard__username--color: var(--color-dark);
+    --profilecard__username--text-track: 0.3px;
+
+    --profilecard__email--font-size: 11px;
+    --profilecard__email--font-weight: 400;
+    --profilecard__email--color: var(--color-gray);
+    --profilecard__email--text-track: 0.3px;
+
+    /* End ---- ProfileCard ---- End */
+
 
     --border-radius: 2rem;
     --card-border-radius: 1rem;
@@ -24,7 +54,7 @@
 
 html {
     /* font-size: var(--html-font-size); */
-    @apply text-[14px] xl:text-[16px] 2xl:text-[18px];
+@apply text-[14px] xl:text-[16px] 2xl:text-[18px];
     font-weight: 500;
 }
 

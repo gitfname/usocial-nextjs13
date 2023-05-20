@@ -1,9 +1,7 @@
 import CreatePost_1 from "@/components/CreatePost_1";
-import SinglePostCard from "@/components/SinglePostCard";
 import StoriesCard from "@/components/StoriesCard";
 
 import dynamic from "next/dynamic";
-const FeedsSection = dynamic(() => import("@/components/FeedsSection"), {ssr: false})
 const FeedsSection_1 = dynamic(() => import("@/components/FeedSection_1"), {ssr: false})
 
 
@@ -95,12 +93,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="mt-6 w-full space-y-4 border">
-        
-        {/* <SinglePostCard
-          date="10m ago"
-          img="/images/post/post-img-1.jpg"
-        /> */}
+      <div className="mt-6 w-full space-y-4">
 
         {/* <FeedsSection /> */}
         <FeedsSection_1 />

@@ -21,7 +21,7 @@ function CreatePost_1({username, img}) {
         <div className="absolute top-1/2 -translate-y-1/2 right-4">
             <Button
                 text="Post"
-                className="!text-[12px] leading-5"
+                className="!text-[0.9rem] leading-5"
             />
         </div>
 

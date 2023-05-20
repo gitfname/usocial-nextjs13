@@ -30,7 +30,12 @@ function SideNavBarItem({text, href, icon, pathname=""}) {
             >
                 {icon}
             </div>
-            <p className="text-sm font-medium text-[--color-black] group-[.active-sidebar-navlink]:text-[--color-black]">{text}</p>
+            <p
+                className="text-sm font-medium text-[--color-black] group-[.active-sidebar-navlink]:text-[--color-primary]
+                group-hover:text-[--color-primary]"
+            >
+                {text}
+            </p>
         </Link>
     )
 }

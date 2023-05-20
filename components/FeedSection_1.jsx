@@ -12,7 +12,7 @@ function FeedsSection_1() {
     const [hasMore, setHasMore] = useState(true)
 
     return (
-        <>
+        <div className="gap-4 grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
             {
                 feeds?.feeds.length
                 ?
@@ -54,7 +54,7 @@ function FeedsSection_1() {
                     <SinglePostCard_1Placeholder_1 />
                 }
             />
-        </>
+        </div>
     )
 }
 
