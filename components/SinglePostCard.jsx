@@ -3,12 +3,13 @@ import ImageWithSkeleton from "./ImageWithSkeleton"
 import LikedByThesePeople_1 from "./LikedByThesePeople_1"
 import ProfileCard_2 from "./ProfileCard_2"
 
-function SinglePostCard({id, date, img, imgH=288, imgW="100%"}) {
+function SinglePostCard({id, date, img, imgH=288, imgW="100%", userDetails}) {
   return (
     <div className="w-full bg-[var(--color-white)] rounded-xl p-4">
         <ProfileCard_2
             username="username is here"
             date={date}
+            userDetails={userDetails}
         />
 
         <ImageWithSkeleton

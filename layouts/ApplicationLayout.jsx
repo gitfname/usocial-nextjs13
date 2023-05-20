@@ -10,6 +10,7 @@ import NavBar from "@/components/NavBar"
 import ProfileCard from "@/components/ProfileCard"
 import SideNavBar from "@/components/SideNavBar"
 import Button from "@/components/Button"
+import ThemeProvider from "@/components/ThemeProvider"
 
         
 function ApplicationLayout({children}) {
@@ -32,6 +33,7 @@ function ApplicationLayout({children}) {
 
           <div className="overflow-y-auto px-3.5 md:px-10 py-10" id="main-section">
             {children}
+            <ThemeProvider />
           </div>
         </div>
     </div>

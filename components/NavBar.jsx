@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { AiOutlineSearch } from "react-icons/ai"
 import Button from "./Button"
+import ImageWithSkeleton from "./ImageWithSkeleton"
 import MobileMenu from "./MobileMenu"
 
 function NavBar() {
@@ -18,7 +19,7 @@ function NavBar() {
             {/* logo */}
             <Link
                 href="/"
-                className="text-2xl font-semibold text-gray-800
+                className="text-2xl font-semibold text-[--logo--color]
                 max-lg:absolute top-1/2 left-1/2 max-lg:-translate-y-1/2 max-lg:-translate-x-1/2"
             >
                 USocial
@@ -29,7 +30,7 @@ function NavBar() {
                 <input
                     type="search"
                     placeholder="Search for creators, inspiration, projects"
-                    className="text-slate-900 text-sm tracking-wide font-normal placeholder-gray-400 px-3
+                    className="text-sm tracking-wide font-normal px-3
                     pl-11 py-2 focus:outline-none w-full
                     bg-[--topnavbar__text-input--bg] text-[--topnavbar__text-input--color]
                     placeholder-[--topnavbar__text-input__placeholder--text-color]
@@ -47,7 +48,16 @@ function NavBar() {
                 />
 
                 {/* profile picture */}
-                <div className="w-9 h-9 aspect-square rounded-full bg-red-400"></div>
+                {/* <div className="w-9 h-9 aspect-square rounded-full bg-red-400"></div> */}
+                <ImageWithSkeleton
+                    imgBorderRadius="50%"
+                    loadingBorderRadius="50%"
+                    width={200}
+                    height={200}
+                    imgH={"2.4rem"}
+                    imgW={"2.4rem"}
+                    img={"/images/post/post-img-2.jpg"}
+                />
             </div>
         </div>
     </nav>

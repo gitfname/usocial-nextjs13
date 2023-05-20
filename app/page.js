@@ -89,7 +89,7 @@ export default function Home() {
 
       <div className="mt-6 w-full">
         <CreatePost_1
-          username="Diana"
+          username="Jenifer"
         />
       </div>
 

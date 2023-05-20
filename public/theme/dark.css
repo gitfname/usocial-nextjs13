@@ -1,23 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
 :root {
-    --color-white: hsl(252, 30%, 100%);
-    --color-light: hsl(249, 23%, 94%);
-    --color-lighter: hsl(252, 30%, 95%);
-    --color-gray: hsl(252, 15%, 65%);
-    --color-primary: hsl(252, 75%, 60%);
+    --color-white: hsl(0, 0%, 10%);
+    --color-light: hsl(0, 0%, 17%);
+    --color-lighter: hsl(0, 0%, 11%);
+    --color-gray: hsl(0, 0%, 33%);
+    --color-primary: hsl(63, 94%, 58%);
     --color-secondary: hsl(252, 100%, 90%);
     --color-sucsess: hsl(120, 95%, 65%);
     --color-danger: hsl(0, 95%, 65%);
-    --color-semidark: hsla(254, 17%, 25%, 0.831);
-    --color-dark: hsl(252, 30%, 17%);
-    --color-black: hsl(252, 30%, 10%);
+    --color-semidark: hsla(0, 0%, 85%, 0.831);
+    --color-dark: hsl(0, 0%, 86%);
+    --color-black: hsl(0, 0%, 100%);
+
 
 
     /* ---- ThemeSwitcher_1 ---- */
 
-    --themeSwitcher--bg: rgba(0, 0, 0, 0.05);
+    --themeSwitcher--bg: rgba(255, 255, 255, 0.06);
 
     /* ---- ThemeSwitcher_1 ---- */
 
@@ -25,14 +23,16 @@
 
     /* ---- Logo ---- */
 
-    --logo--color: var(--color-black);
+    --logo--color: rgb(255, 255, 255, 0.9);
 
     /* End ---- Logo ---- End */
 
+
+
     /* NavBar text input */
-    --topnavbar__text-input--bg: hsl(249, 23%, 94%);
-    --topnavbar__text-input--color: hsl(252, 30%, 17%);
-    --topnavbar__text-input__placeholder--text-color: hsl(252, 30%, 17%);
+    --topnavbar__text-input--bg: hsl(0, 0%, 16%);
+    --topnavbar__text-input--color: hsl(0, 0%, 85%);
+    --topnavbar__text-input__placeholder--text-color: hsl(0, 0%, 53%);
     --topnavbar__text-input__border-radius: 50px;
 
     /* ---- ProfileCard ---- */
@@ -51,7 +51,7 @@
 
     --profilecard__email--font-size: 0.75rem;
     --profilecard__email--font-weight: 400;
-    --profilecard__email--color: var(--color-gray);
+    --profilecard__email--color: rgba(255, 255, 255, 0.3);
     --profilecard__email--text-track: 0.3px;
 
     /* End ---- ProfileCard ---- End */
@@ -64,7 +64,7 @@
     --notificationcard1--border-radius: 0px;
     --notificationcard1--bg: transparent;
     --notificationcard1--hover-bg: transparent;
-    --notificationcard1--border-b-color: rgba(0, 0, 0, 0.06);
+    --notificationcard1--border-b-color: rgba(255, 255, 25, 0.08);
     --notificationcard1--padding-y: 14px;
 
     --notificationcard1_placeholder--bg: var(--color-gray);
@@ -83,7 +83,7 @@
     --notificationcard1__username--font-weight: 500;
 
     --notificationcard1__date--font-size: 0.75rem;
-    --notificationcard1__date--color: rgba(0, 0, 0, 0.6);
+    --notificationcard1__date--color: rgba(255, 255, 255, 0.4);
     --notificationcard1__date--font-weight: 600;
 
     /* End ---- NotificationCard_1 ---- End */
@@ -96,16 +96,4 @@
     --card-padding: 1rem;
 
     --html-font-size: 14px;
-}
-
-html {
-    /* font-size: var(--html-font-size); */
-@apply text-[14px] xl:text-[16px] 2xl:text-[18px];
-    font-weight: 500;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--color-dark);
-    background-color: var(--color-light);
 }

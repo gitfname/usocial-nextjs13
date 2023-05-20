@@ -1,4 +1,5 @@
 import Button from "./Button"
+import ImageWithSkeleton from "./ImageWithSkeleton"
 
 
 function CreatePost_1({username, img}) {
@@ -6,13 +7,21 @@ function CreatePost_1({username, img}) {
     <div className="w-full relative rounded-full overflow-hidden">
         
         {/* profile */}
-        <div className="absolute top-1/2 -translate-y-1/2 left-4 w-[30px] h-[30px] bg-red-300 rounded-full">
-
+        <div className="absolute top-1/2 -translate-y-1/2 left-4">
+          <ImageWithSkeleton
+            imgBorderRadius="50%"
+            loadingBorderRadius="50%"
+            width={200}
+            height={200}
+            imgH="2.2rem"
+            imgW="2.2rem"
+            img={"/images/post/post-img-2.jpg"}
+          />
         </div>
 
         <input
             type="text"
-            className="p-3.5 focus:outline-none border-none pl-14 pr-24 bg-[var(--color-white)]
+            className="p-3.5 focus:outline-none border-none pl-16 pr-24 bg-[var(--color-white)]
             text-sm font-normal placeholder-[var(--color-gray)] w-full"
             placeholder={"What's on your mind "+username}
         />

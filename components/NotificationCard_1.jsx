@@ -1,4 +1,4 @@
-import Image from "next/image"
+import ImageWithSkeleton from "./ImageWithSkeleton"
 
 export default function Notificationcard_1({userDetails, action="liked", date="44m ago"}) {
     return (
@@ -11,14 +11,15 @@ export default function Notificationcard_1({userDetails, action="liked", date="4
 
             <div className="flex items-center gap-x-2.5">
 
-                <Image
-                    width={100}
-                    height={100}
-                    src={userDetails?.imgSrc}
-                    className="
-                    flex-shrink-0 w-[--notificationcard1__img--width] h-[--notificationcard1__img--height]
-                    rounded-[--notificationcard1__img--border-radius] cursor-pointer
-                    shadow-md shadow-[--notificationcard1__img--shadow-color]"
+                <ImageWithSkeleton              
+                    imgBorderRadius="var(--notificationcard1__img--border-radius)"
+                    loadingBorderRadius="var(--notificationcard1__img--border-radius)"
+                    className="cursor-pointer shadow-md shadow-[--notificationcard1__img--shadow-color]"
+                    width={280}
+                    height={280}
+                    imgH="2.6rem"
+                    imgW="2.6rem"
+                    img={userDetails?.imgSrc}
                 />
 
                 <p
