@@ -16,6 +16,13 @@ export function setTheme() {
         --color-black: hsl(252, 30%, 10%);
     
     
+        /* ---- MobileMenu ---- */
+    
+        --mobile-menu--fill-color: rgba(0, 0, 0, 0.7);
+    
+        /* End ---- MobileMenu ---- End */
+    
+    
         /* ---- ThemeSwitcher_1 ---- */
     
         --themeSwitcher--bg: rgba(0, 0, 0, 0.05);

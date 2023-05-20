@@ -22,7 +22,7 @@ export default function MobileMenu() {
     return (
         <>
             <button onClick={() => setIsOpen(true)}>
-                <AiOutlineMenu className="w-[18px] h-[18px] fill-black" />
+                <AiOutlineMenu className="w-[18px] h-[18px] fill-[--mobile-menu--fill-color]" />
             </button>
             <div onClick={() => setIsOpen(false)} className={`fixed z-[999999] w-full h-full pointer-events-none ${isOpen&&"!pointer-events-auto"}`}>
                 <div  className={`fixed top-0 left-0 w-full h-full opacity-0 transition-opacity duration-300 bg-black/60 ${isOpen&&"!opacity-100"}`}>

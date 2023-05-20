@@ -17,6 +17,14 @@ export function setTheme() {
     
     
     
+        /* ---- MobileMenu ---- */
+    
+        --mobile-menu--fill-color: rgba(255, 255, 255, 0.85);
+    
+        /* End ---- MobileMenu ---- End */
+    
+    
+    
         /* ---- ThemeSwitcher_1 ---- */
     
         --themeSwitcher--bg: rgba(255, 255, 255, 0.06);
